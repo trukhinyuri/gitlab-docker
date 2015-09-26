@@ -1,0 +1,2 @@
+Gitlab logs
+Use "sudo docker logs -f GITLAB_CONTAINER_ID" for view logs in docker

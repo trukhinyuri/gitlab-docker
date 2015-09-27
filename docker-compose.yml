@@ -1,0 +1,11 @@
+gitlab:
+  build: .
+  ports:
+  - "443:443"
+  - "80:80"
+  - "8005:22"
+  volumes:
+  - ./config:/etc/gitlab
+  - ./logs:/var/log/gitlab
+  - ./data:/var/opt/gitlab
+  restart: always
